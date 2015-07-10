@@ -34,6 +34,7 @@ gem 'active_model_serializers', '~> 0.9.3'
 
 
 
+gem 'devise'
 
 group :development do
   # Use sqlite3 as the database for Active Record

@@ -2,6 +2,8 @@ require 'api_constraints'
 
 MarketPlaceApi::Application.routes.draw do
 
+  devise_for :users
+
 # we are going to set the constraints,
 # the base_url and the default response format
 # for each request.
