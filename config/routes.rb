@@ -11,9 +11,10 @@ MarketPlaceApi::Application.routes.draw do
 namespace :api, defaults: { format: :json },
                 constraints: { subdomain: 'api' },
                 path: '/' do
-  scope module: :vi,
+  scope module: :v1,
         constraints: ApiConstraints.new(version: 1, default: true) do
     # we are going to list our resources.
+    resources :users, only: [:show]
   end
 end
 
