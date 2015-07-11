@@ -2,6 +2,7 @@ require 'api_constraints'
 
 MarketPlaceApi::Application.routes.draw do
 
+  mount SabisuRails::Engine => "/sabisu_rails"
   devise_for :users
 
 # we are going to set the constraints,
