@@ -34,7 +34,7 @@ gem 'active_model_serializers', '~> 0.9.3'
 
 
 gem 'sabisu_rails', github: "IcaliaLabs/sabisu-rails"
-gem 'compass-rails'
+gem 'compass-rails', '1.1.7'
 gem 'furatto'
 gem 'font-awesome-rails'
 gem 'simple_form'
