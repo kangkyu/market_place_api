@@ -15,7 +15,7 @@ namespace :api, defaults: { format: :json },
   scope module: :v1,
         constraints: ApiConstraints.new(version: 1, default: true) do
     # we are going to list our resources.
-    resources :users, only: [:show]
+    resources :users, only: [:show, :create, :update, :destroy]
   end
 end
 
